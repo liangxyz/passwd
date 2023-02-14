@@ -1,4 +1,4 @@
-name: Release mosdns docker
+name: Release passwd docker
 
 on:
   push:
@@ -46,5 +46,5 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           tags: |
-            ${{ secrets.DOCKERHUB_USERNAME }}/mosdns:latest
-            ${{ secrets.DOCKERHUB_USERNAME }}/mosdns:${{ env.TAG }}
+            ${{ secrets.DOCKERHUB_USERNAME }}/passwd:latest
+            ${{ secrets.DOCKERHUB_USERNAME }}/passwd:${{ env.TAG }}
