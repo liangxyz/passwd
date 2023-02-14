@@ -2,8 +2,6 @@ name: Release passwd docker
 
 on:
   push:
-    branches:
-      - master  
     paths:
       - "tag"
       - "Dockerfile"
